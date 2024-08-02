@@ -79,9 +79,9 @@ def show_predict_page():
         res = rbm.predict(X)
 
         if res == 1:
-            ans = "there is less than 50" + "%" + "diameter narrowing in any major blood vessel"
+            ans = "There is less than 50 " + "%" + " diameter narrowing in any major blood vessel"
         elif res == 0:
-            ans = "there is more than 50" + "%" + "diameter narrowing in any major blood vessels"
+            ans = "There is more than 50 " + "%" + " diameter narrowing in any major blood vessels"
         
 
 
