@@ -78,7 +78,14 @@ def show_predict_page():
 
         res = rbm.predict(X)
 
-        st.subheader(f"The predicted result is {res[0]}")
+        if res == 1:
+            ans = "there is less than 50" + "%" + "diameter narrowing in any major blood vessel"
+        elif res == 0:
+            ans = "there is more than 50" + "%" + "diameter narrowing in any major blood vessels"
+        
+
+
+        st.subheader(f"{ans}")
 
 
 
